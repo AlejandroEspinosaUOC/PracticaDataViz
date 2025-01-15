@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_485262aead80304eb2d47cd48d05b8e7 {
+                #map_7ef3d518cd7aaa4a7c11e21397f3a354 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -40,14 +40,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_485262aead80304eb2d47cd48d05b8e7" ></div>
+            <div class="folium-map" id="map_7ef3d518cd7aaa4a7c11e21397f3a354" ></div>
         
 </body>
 <script>
     
     
-            var map_485262aead80304eb2d47cd48d05b8e7 = L.map(
-                "map_485262aead80304eb2d47cd48d05b8e7",
+            var map_7ef3d518cd7aaa4a7c11e21397f3a354 = L.map(
+                "map_7ef3d518cd7aaa4a7c11e21397f3a354",
                 {
                     center: [40.7012741111112, -73.9759420666668],
                     crs: L.CRS.EPSG3857,
@@ -64,7 +64,7 @@
 
         
     
-            var tile_layer_0f39a23b80d01e8c452f310edabf0e96 = L.tileLayer(
+            var tile_layer_32a487f6dcce1a216beeba3c6eaa0c6f = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -81,16 +81,16 @@
             );
         
     
-            tile_layer_0f39a23b80d01e8c452f310edabf0e96.addTo(map_485262aead80304eb2d47cd48d05b8e7);
+            tile_layer_32a487f6dcce1a216beeba3c6eaa0c6f.addTo(map_7ef3d518cd7aaa4a7c11e21397f3a354);
         
     
-            var feature_group_586f7d04e15f8f9b3063696465eebe81 = L.featureGroup(
+            var feature_group_8a17664080aae002d8f267c52886a979 = L.featureGroup(
                 {
 }
             );
         
     
-            var heat_map_4cabb23362be5e92874239a6c48de922 = L.heatLayer(
+            var heat_map_056a00d81f214813238b7a8232cac5a9 = L.heatLayer(
                 [[40.84676, -73.873207, 0.2525], [40.65083, -73.94972, 0.21516666666666667], [40.728333333333, -73.994166666667, 0.1515], [40.704166666667, -73.917777777778, 0.19935714285714284], [40.576280555556, -74.144838888889, 0.15666666666666668]],
                 {
   "minOpacity": 0.5,
@@ -101,19 +101,19 @@
             );
         
     
-            heat_map_4cabb23362be5e92874239a6c48de922.addTo(feature_group_586f7d04e15f8f9b3063696465eebe81);
+            heat_map_056a00d81f214813238b7a8232cac5a9.addTo(feature_group_8a17664080aae002d8f267c52886a979);
         
     
-            feature_group_586f7d04e15f8f9b3063696465eebe81.addTo(map_485262aead80304eb2d47cd48d05b8e7);
+            feature_group_8a17664080aae002d8f267c52886a979.addTo(map_7ef3d518cd7aaa4a7c11e21397f3a354);
         
     
-            var feature_group_4c8a5bdda6f38481598c28434b8a4e14 = L.featureGroup(
+            var feature_group_b1c0606fcd448754b44d7cc1a40c428d = L.featureGroup(
                 {
 }
             );
         
     
-            var heat_map_0d4dd61250b59cbdb647085bfd106aea = L.heatLayer(
+            var heat_map_108b5aca9e0db09d41353054cb33bfc5 = L.heatLayer(
                 [[40.84676, -73.873207, 21453.9], [40.65083, -73.94972, 28471.444444444445], [40.728333333333, -73.994166666667, 47216.4], [40.704166666667, -73.917777777778, 29391.571428571428], [40.576280555556, -74.144838888889, 35799.0]],
                 {
   "minOpacity": 0.5,
@@ -124,27 +124,27 @@
             );
         
     
-            heat_map_0d4dd61250b59cbdb647085bfd106aea.addTo(feature_group_4c8a5bdda6f38481598c28434b8a4e14);
+            heat_map_108b5aca9e0db09d41353054cb33bfc5.addTo(feature_group_b1c0606fcd448754b44d7cc1a40c428d);
         
     
-            var layer_control_c2be155770eecfd0b99bb16461a70914_layers = {
+            var layer_control_91a079b8ce155c7ba4eabdd02771594e_layers = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_0f39a23b80d01e8c452f310edabf0e96,
+                    "openstreetmap" : tile_layer_32a487f6dcce1a216beeba3c6eaa0c6f,
                 },
                 overlays :  {
-                    "Heatmap: Poverty Rate" : feature_group_586f7d04e15f8f9b3063696465eebe81,
-                    "Heatmap: Median Income" : feature_group_4c8a5bdda6f38481598c28434b8a4e14,
+                    "Heatmap: Poverty Rate" : feature_group_8a17664080aae002d8f267c52886a979,
+                    "Heatmap: Median Income" : feature_group_b1c0606fcd448754b44d7cc1a40c428d,
                 },
             };
-            let layer_control_c2be155770eecfd0b99bb16461a70914 = L.control.layers(
-                layer_control_c2be155770eecfd0b99bb16461a70914_layers.base_layers,
-                layer_control_c2be155770eecfd0b99bb16461a70914_layers.overlays,
+            let layer_control_91a079b8ce155c7ba4eabdd02771594e = L.control.layers(
+                layer_control_91a079b8ce155c7ba4eabdd02771594e_layers.base_layers,
+                layer_control_91a079b8ce155c7ba4eabdd02771594e_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_485262aead80304eb2d47cd48d05b8e7);
+            ).addTo(map_7ef3d518cd7aaa4a7c11e21397f3a354);
 
         
 </script>
