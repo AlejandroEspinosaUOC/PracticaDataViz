@@ -14,3 +14,6 @@ pip install -r requirements.txt
 '''
 python dash_layout.py
 '''
+
+
+El codi bé amb virtual environment si es vol utiltizar
