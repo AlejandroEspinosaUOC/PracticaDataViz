@@ -73,7 +73,7 @@ data["NORMALIZED_WORTH_IT_METRIC"] = (data["WORTH_IT_METRIC"] - min_worth) / (ma
 
 # Preu per metre quadrat
 data["PRICE_PER_SQM"] = data["PRICE"] / data["PROPERTYSQFT"]
-data["PRICE_PER_SQM"] = data["PRICE_PER_SQM"].fillna(0)  # Handle division by zero or missing values
+data["PRICE_PER_SQM"] = data["PRICE_PER_SQM"].fillna(0)
 
 # Normalitzem
 data["NORMALIZED_PRICE_PER_SQM"] = (data["PRICE_PER_SQM"] - data["PRICE_PER_SQM"].min()) / (data["PRICE_PER_SQM"].max() - data["PRICE_PER_SQM"].min())
@@ -93,7 +93,7 @@ sns.barplot(x=mean_price_per_type.index, y=mean_price_per_type.values, color='bl
 plt.bar("Diners en 20 anys", incomex20, alpha=0.6, label='Income * 20', color='green')
 plt.bar("Diners realistes en 20 anys", incomex5, alpha=0.6, label='Income * 10', color='red')
 plt.title('Comparació de preu mitjà per tipus de vivenda, amb diners guanys realistes i en 20 anys')
-plt.xlabel('Barri')
+plt.xlabel('Tipus de vivenda')
 plt.ylabel('Valor')
 plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f'{x:,.0f}'))
 plt.xticks(rotation=90)
